@@ -1,0 +1,115 @@
+@charset "UTF-8";
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*Elemento Iniciais*/
+}
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+header .nameNetflix{
+    color: var(--vermelho);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-weight: 200;
+}
+
+.nav-items{
+    font-size: 13px;
+    padding-left: 25px;
+}
+
+header nav a:hover{
+    color:#fff
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.50)100%), url('https://ep01.epimg.net/elpais/imagenes/2018/01/19/album/1516367128_442397_1516371056_noticia_normal.jpg');
+
+    background-size: cover;
+    height: 800px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.filme-principal .sinopse{
+    margin-bottom: 90px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.70);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    
+    cursor: pointer;
+    transition: 0.7s ease all ;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+/*Carousel*/
+
+.box-filme{
+    height: 500px;
+    width: 100px;
+    display: block;
+    
+}
+.carousel-movies{
+    margin-top: 20px;
+}
